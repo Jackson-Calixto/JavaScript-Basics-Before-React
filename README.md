@@ -27,3 +27,8 @@ https://vitejs.dev/
 
 # vanillajs = JavaScript
 http://vanilla-js.com/
+
+# Creating vite project
+npm create vite@latest
+framework: Vanilla
+variant: JavaScript
