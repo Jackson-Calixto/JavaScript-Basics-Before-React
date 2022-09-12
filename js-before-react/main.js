@@ -10,14 +10,7 @@ const User = {
   },
 };
 
-// Short syntax
+// Optional Chaning
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
 
-const name = 'Jackson'
-const idade = 43
-
-const user = {
-  name,
-  idade
-}
-
-document.body.innerText = JSON.stringify({user})
+document.body.innerText = User.address.street
