@@ -16,4 +16,8 @@ const User = {
 
 // Optional Chaning
 
-document.body.innerText = User.address.zip.code
+document.body.innerText = User.address
+  ? User.address.zip
+    ? User.address.zip.code
+    : "Não informado"
+  : "Não infomrado";
