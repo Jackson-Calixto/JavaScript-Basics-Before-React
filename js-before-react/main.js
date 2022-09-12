@@ -1,7 +1,12 @@
-// NuNullish coalescing operator
+// Objects
 
-const idade = 0;
+const User = {
+  name: "Jackson",
+  idade: 43,
+  address: {
+    street: "Rua Teste",
+    number: 176,
+  },
+};
 
-// undefined, null == false
-
-document.body.innerText = "Sua idade é: " + (idade ?? "Não informado");
+document.body.innerText = "name" in User;
