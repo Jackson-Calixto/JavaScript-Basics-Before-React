@@ -12,12 +12,17 @@ const User = {
 
 // Destructuring
 
-function mostraIdade({idade}) {
+function mostraIdade({ idade }) {
   return idade;
 }
 
 // Rest operator
 
-const {name, idade, ...rest} = User
+const { name, idade, ...rest } = User;
 
-document.body.innerText = JSON.stringify(rest);
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const first = array[0];
+const second = array[1];
+
+document.body.innerText = JSON.stringify({first, second});
