@@ -1,22 +1,7 @@
-// Objects
+// Array Methods
 
-const user = {
-  name: "Jackson",
-  nickname: "Calixto",
-  idade: 43,
-  address: {
-    street: "Rua Teste",
-    number: 176,
-    zip: {
-      code: 89245000,
-      city: "Araquari",
-    },
-    // showFullAddress() {
-    //   return "ok";
-    // },
-  },
-};
+const array = [1, 2, 3, 4, 5];
 
-// Optional Chaning
-
-document.body.innerText = user.address?.showFullAddress?.();
+for (const i of array){
+  document.body.innerText += i
+}
