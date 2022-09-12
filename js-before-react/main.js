@@ -19,4 +19,4 @@ const user = {
 
 // Optional Chaning
 
-document.body.innerText = user.address.showFullAddress();
+document.body.innerText = user.address?.showFullAddress();
