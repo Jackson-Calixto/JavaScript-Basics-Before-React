@@ -11,9 +11,12 @@ const user = {
       code: 89245000,
       city: "Araquari",
     },
+    showFullAddress() {
+      return "ok";
+    },
   },
 };
 
 // Optional Chaning
 
-document.body.innerText = user?.address?.zip?.code ?? "Não informado";
+document.body.innerText = user.address.showFullAddress();
