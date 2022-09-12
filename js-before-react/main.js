@@ -12,8 +12,8 @@ const User = {
 
 // Destructuring
 
-function mostraIdade(User) {
-  return User.idade;
+function mostraIdade({idade}) {
+  return idade;
 }
 
 document.body.innerText = mostraIdade(User);
