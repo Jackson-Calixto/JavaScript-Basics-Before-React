@@ -7,10 +7,10 @@ const user = {
   address: {
     street: "Rua Teste",
     number: 176,
-    //   zip: {
-    //     code: 89245000,
-    //     city: "Araquari",
-    //   },
+    zip: {
+      code: 89245000,
+      city: "Araquari",
+    },
   },
 };
 
