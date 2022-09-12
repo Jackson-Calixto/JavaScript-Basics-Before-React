@@ -9,4 +9,4 @@ const User = {
   },
 };
 
-document.body.innerText = JSON.stringify(Object.values(User));
+document.body.innerText = JSON.stringify(Object.entries(User));
