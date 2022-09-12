@@ -9,4 +9,4 @@ const User = {
   },
 };
 
-document.body.innerText = Object.keys(User);
+document.body.innerText = Object.values(User);
