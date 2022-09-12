@@ -18,6 +18,6 @@ function mostraIdade({idade}) {
 
 // Rest operator
 
-const {name, ...rest} = User
+const {name, idade, ...rest} = User
 
 document.body.innerText = JSON.stringify(rest);
