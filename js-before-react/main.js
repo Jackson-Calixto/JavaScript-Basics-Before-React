@@ -2,7 +2,7 @@
 
 const array = [1, 2, 3, 4, 5];
 
-const novoArray = [];
+const novoArray = []; 
 
 array.forEach((item) => {
   novoArray.push(item * 2);
