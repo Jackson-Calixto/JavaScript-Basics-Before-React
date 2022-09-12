@@ -9,4 +9,4 @@ const User = {
   },
 };
 
-document.body.innerText = "name" in User;
+document.body.innerText = "nickname" in User;
