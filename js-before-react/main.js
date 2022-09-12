@@ -1,6 +1,6 @@
 // Objects
 
-const User = {
+const user = {
   name: "Jackson",
   nickname: "Calixto",
   idade: 43,
@@ -16,8 +16,4 @@ const User = {
 
 // Optional Chaning
 
-document.body.innerText = User.address
-  ? User.address.zip
-    ? User.address.zip.code
-    : "Não informado"
-  : "Não infomrado";
+document.body.innerText = user?.address?.zip?.code ?? "Não informado";
