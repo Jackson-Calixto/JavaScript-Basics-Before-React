@@ -11,6 +11,6 @@ const User = {
 
 // Destructuring
 
-const { address, idade } = User;
+const { address, idade: age } = User;
 
-document.body.innerText = JSON.stringify({address, idade});
+document.body.innerText = JSON.stringify({ address, age });
