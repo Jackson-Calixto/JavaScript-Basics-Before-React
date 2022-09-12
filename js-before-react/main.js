@@ -1,5 +1,5 @@
 // NuNullish coalescing operator
 
-const idade = 0;
+const idade = null;
 
 document.body.innerText = "Sua idade é: " + idade;
