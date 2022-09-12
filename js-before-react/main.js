@@ -16,8 +16,8 @@ const name = 'Jackson'
 const idade = 43
 
 const user = {
-  name:name,
-  idade:idade
+  name,
+  idade
 }
 
 document.body.innerText = JSON.stringify({user})
