@@ -1,6 +1,14 @@
-// Template Literals
+// Promises
+// .then / .catch
 
-const name = null;
-const message = `Bem-vindo, ${name ? name : "visitante"}`;
+const somaDoisNumeros = (a, b) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(a + b);
+    }, 2000);
+  });
+};
 
-document.body.innerText = message;
+somaDoisNumeros(2, 3).then((soma) => {
+  document.body.innerText = soma;
+});
