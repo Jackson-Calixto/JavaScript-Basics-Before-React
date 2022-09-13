@@ -1,10 +1,10 @@
-// Promises
+// Promises fetch
 // .then / .catch
 
 fetch("https://api.github.com/users/Jackson-Calixto")
   .then((response) => {
     console.log(
-      response.text()
+      response.json()
         .then((responseText) => {
           console.log(responseText);
         })
