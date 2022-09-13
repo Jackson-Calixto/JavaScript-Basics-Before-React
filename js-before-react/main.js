@@ -9,6 +9,10 @@ const somaDoisNumeros = (a, b) => {
   });
 };
 
-somaDoisNumeros(2, 3).then((soma) => {
-  document.body.innerText = soma;
-});
+somaDoisNumeros(2, 3)
+  .then((soma) => {
+    document.body.innerText = soma;
+  })
+  .catch((error) => {
+    console.log(error);
+  });
