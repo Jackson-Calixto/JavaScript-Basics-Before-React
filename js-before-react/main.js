@@ -1,10 +1,8 @@
-// Promises finally
-fetch("https://api.github.com/users/Jackson-Calixto")
-  .then((response) => response.json())
-  .then(body => console.log(body))
-  .catch((error) => {
-    console.log(error);
-  })
-  .finally(() => {
-    console.log('Finally...')
-  });
+// Promises async await
+async function buscaDadosGithub() {
+  const response = await fetch("https://api.github.com/users/Jackson-Calixto");
+  const body = await response.json();
+  console.log(body);
+}
+
+buscaDadosGithub();
