@@ -1,7 +1,6 @@
-// Array Methods Reduce
+// Template Literals
 
-const array = [1, 2, 3, 4, 5];
+const name = "Jackson";
+const message = "Bem-vindo, " + name;
 
-const soma = array.reduce((acc, item) => acc + item);
-
-document.body.innerText = JSON.stringify(soma);
+document.body.innerText = message;
