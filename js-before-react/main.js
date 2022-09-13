@@ -1,4 +1,4 @@
-// Promises async await trycatch
+// Promises async await trycatch finally
 async function buscaDadosGithub() {
   try {
     const response = await fetch(
@@ -8,6 +8,8 @@ async function buscaDadosGithub() {
     console.log(body);
   } catch (error) {
     console.log(error);
+  } finally {
+    console.log("finally...");
   }
 }
 
