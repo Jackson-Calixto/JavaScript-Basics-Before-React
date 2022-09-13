@@ -1,17 +1,9 @@
 // Promises
 // .then / .catch
 
-const somaDoisNumeros = (a, b) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      reject(a + b);
-    }, 2000);
-  });
-};
-
-somaDoisNumeros(2, 3)
-  .then((soma) => {
-    document.body.innerText = soma;
+fetch("https://api.github.com/users/Jackson-Calixto")
+  .then(response => {
+    console.log(response);
   })
   .catch((error) => {
     console.log(error);
