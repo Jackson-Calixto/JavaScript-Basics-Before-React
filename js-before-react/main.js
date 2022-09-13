@@ -1,11 +1,11 @@
-// Promises async await trycatch finally
+// Promises async await Promise Pending
 async function buscaDadosGithub() {
   try {
     const response = await fetch(
-      "https://xapi.github.com/users/Jackson-Calixto"
+      "https://api.github.com/users/Jackson-Calixto"
     );
     const body = await response.json();
-    console.log(body);
+    return body.name;
   } catch (error) {
     console.log(error);
   } finally {
@@ -13,4 +13,6 @@ async function buscaDadosGithub() {
   }
 }
 
-buscaDadosGithub();
+const name = buscaDadosGithub();
+
+console.log(name);
