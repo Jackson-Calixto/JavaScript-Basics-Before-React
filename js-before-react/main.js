@@ -1,4 +1,5 @@
-// Having lib/math exported, vscode auto-import on use
-import { soma } from "./lib/math";
+// Had to manually add sub from lib/math exported
+import { soma, sub } from "./lib/math";
 
-document.body.innerText = soma(4, 3);
+console.log(soma(4, 3));
+console.log(sub(4, 3));
