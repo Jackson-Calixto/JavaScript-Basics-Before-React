@@ -4,7 +4,7 @@
 const somaDoisNumeros = (a, b) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(a + b);
+      reject(a + b);
     }, 2000);
   });
 };
