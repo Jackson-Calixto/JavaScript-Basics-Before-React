@@ -1,4 +1,4 @@
-// Promises async await Promise Pending
+// Promises async await Promise Pending solved
 async function buscaDadosGithub() {
   try {
     const response = await fetch(
@@ -13,6 +13,6 @@ async function buscaDadosGithub() {
   }
 }
 
-const name = buscaDadosGithub();
-
-console.log(name);
+buscaDadosGithub().then((name) => {
+  console.log(name);
+});
